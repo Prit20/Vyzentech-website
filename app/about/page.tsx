@@ -3,7 +3,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { Users, Target, Lightbulb, Award, TrendingUp, Code2, Globe, Zap } from 'lucide-react';
+import { Users, Target, Lightbulb, Award, TrendingUp, Code2, Zap } from 'lucide-react';
 
 export default function AboutPage() {
   const stats = [

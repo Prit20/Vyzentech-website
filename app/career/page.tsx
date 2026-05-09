@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import JobApplicationModal from '@/components/JobApplicationModal';
 import GetInTouchModal from '@/components/GetInTouchModal';
-import Link from 'next/link';
 import { Briefcase, Users, Zap, Trophy } from 'lucide-react';
 
 export default function CareerPage() {

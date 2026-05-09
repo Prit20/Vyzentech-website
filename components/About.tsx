@@ -1,6 +1,6 @@
 'use client';
 
-import { Zap, Target, Eye, Award, Code2, Smartphone, Globe, Palette, Users, Server, CheckCircle } from 'lucide-react';
+import { Zap, Target, Eye, Award } from 'lucide-react';
 import Link from 'next/link';
 
 export default function About() {
