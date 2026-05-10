@@ -121,7 +121,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">pmtinfotech7@gmail.com</p>
+                    <p className="text-gray-600">info@vyzentech.in</p>
                   </div>
                 </div>
 
@@ -132,7 +132,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 9773148082</p>
+                    <p className="text-gray-600">+91 7016124622</p>
                   </div>
                 </div>
 
@@ -143,7 +143,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600">Vadodara, Gujarat</p>
+                    <p className="text-gray-600">A-Wing 202-203, Union Heights, Rahulraj Mall Lane, Maharana Pratap Rd, Vesu, Surat, Gujarat 395007</p>
                   </div>
                 </div>
               </div>

@@ -3,16 +3,9 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
-import { Users, Target, Lightbulb, Award, TrendingUp, Code2, Zap } from 'lucide-react';
+import { Users, Target, Lightbulb, Zap } from 'lucide-react';
 
 export default function AboutPage() {
-  const stats = [
-    { number: '50+', label: 'Projects Delivered', icon: Code2 },
-    { number: '30+', label: 'Team Members', icon: Users },
-    { number: '20+', label: 'Happy Clients', icon: Award },
-    { number: '4+', label: 'Years Operational', icon: TrendingUp },
-  ];
-
   const values = [
     {
       icon: Lightbulb,
@@ -40,7 +33,7 @@ export default function AboutPage() {
     {
       year: '2022',
       title: 'Company Founded',
-      description: 'PMT Infotech was established with a vision to deliver world-class IT solutions to businesses across diverse industries.',
+      description: 'Vyzentech was established with a vision to deliver world-class IT solutions to businesses across diverse industries.',
     },
     {
       year: '2023',
@@ -67,12 +60,12 @@ export default function AboutPage() {
       <section className="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-20 md:py-28">
         <div className="container-custom">
           <div className="max-w-3xl">
-            <p className="section-subtitle">ABOUT PMT INFOTECH</p>
+            <p className="section-subtitle">ABOUT VYZENTECH</p>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Transforming Ideas Into <span className="text-gradient">Digital Reality</span>
             </h1>
             <p className="text-gray-600 text-lg mb-8">
-              Since 2022, PMT Infotech has been at the forefront of delivering innovative IT solutions that empower businesses to thrive in the digital era. With a team of passionate developers, designers, and strategists, we're committed to turning your vision into cutting-edge technology.
+              Since 2022, Vyzentech has been at the forefront of delivering innovative IT solutions that empower businesses to thrive in the digital era. With a team of passionate developers, designers, and strategists, we're committed to turning your vision into cutting-edge technology.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -88,28 +81,6 @@ export default function AboutPage() {
                 Get In Touch
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => {
-              const Icon = stat.icon;
-              return (
-                <div key={index} className="text-center">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-                      <Icon size={32} className="text-white" />
-                    </div>
-                  </div>
-                  <h3 className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.number}</h3>
-                  <p className="text-gray-600 font-semibold">{stat.label}</p>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
@@ -237,7 +208,7 @@ export default function AboutPage() {
             <div className="text-center mb-16">
               <p className="section-subtitle">PARTNERSHIP WITH US</p>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Why Choose PMT Infotech
+                Why Choose Vyzentech
               </h2>
             </div>
 
@@ -292,7 +263,7 @@ export default function AboutPage() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-white text-opacity-90 text-lg mb-8 max-w-2xl mx-auto">
-            Let's discuss how PMT Infotech can help you achieve your digital goals. Our team is ready to collaborate with you.
+            Let's discuss how Vyzentech can help you achieve your digital goals. Our team is ready to collaborate with you.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

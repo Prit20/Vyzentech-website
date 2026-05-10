@@ -17,7 +17,7 @@ export default function CareerPage() {
     {
       id: 1,
       title: 'Senior Full Stack Developer',
-      location: 'Vadodara, Gujarat',
+      location: 'Surat, Gujarat',
       type: 'Full-time',
       experience: '5+ years',
       description: 'We are looking for an experienced Full Stack Developer to join our growing team.',
@@ -25,7 +25,7 @@ export default function CareerPage() {
     {
       id: 3,
       title: 'UI/UX Designer',
-      location: 'Vadodara, Gujarat',
+      location: 'Surat, Gujarat',
       type: 'Full-time',
       experience: '3+ years',
       description: 'Create beautiful and intuitive designs for web and mobile applications.',
@@ -116,7 +116,7 @@ export default function CareerPage() {
             Career <span className="text-gradient">Opportunities</span>
           </h1>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Be part of PMT Infotech and help us transform businesses with innovative IT solutions.
+            Be part of Vyzentech and help us transform businesses with innovative IT solutions.
           </p>
         </div>
       </section>
@@ -126,7 +126,7 @@ export default function CareerPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Why Join <span className="text-gradient">PMT Infotech</span>?
+              Why Join <span className="text-gradient">Vyzentech</span>?
             </h2>
           </div>
 

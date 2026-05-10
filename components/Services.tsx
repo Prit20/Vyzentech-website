@@ -63,7 +63,7 @@ export default function Services() {
             For Your <span className="text-gradient">Success</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mt-4">
-            PMT Infotech offers comprehensive IT solutions tailored to drive your business forward
+            Vyzentech offers comprehensive IT solutions tailored to drive your business forward
           </p>
         </div>
 

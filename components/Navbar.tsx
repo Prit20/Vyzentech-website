@@ -1,11 +1,13 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { label: 'Home', href: '/' },
@@ -19,28 +21,36 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container-custom py-4 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          {/* PMT Logo */}
-          <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md">
-            <span className="tracking-tighter">PMT</span>
+        <Link href="/" className="flex items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity">
+          {/* Vyzentech Logo */}
+          <div className="flex items-center gap-0">
+            <div className="relative">
+              <span className="font-bold text-3xl text-blue-900">V</span>
+              <span className="absolute top-0 left-0 font-bold text-2xl text-blue-500" style={{marginLeft: '2px'}}>\</span>
+            </div>
+            <span className="font-bold text-2xl text-blue-900">yzen</span>
+            <span className="font-bold text-2xl text-blue-500">Tech</span>
           </div>
-          <div className="hidden sm:block">
-            <div className="font-bold text-primary text-lg">PMT Infotech</div>
-            <div className="text-xs text-gray-500 font-medium">IT SOLUTIONS</div>
-          </div>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex gap-8 items-center">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={`font-medium transition-colors ${
+                  isActive
+                    ? 'text-primary border-b-2 border-primary pb-1'
+                    : 'text-gray-700 hover:text-primary'
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Mobile Menu Button */}
@@ -57,16 +67,23 @@ export default function Navbar() {
       {isOpen && (
         <div className="lg:hidden bg-white border-t border-gray-200 py-4">
           <div className="container-custom flex flex-col gap-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-gray-700 hover:text-primary font-medium py-2 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className={`font-medium py-2 transition-colors ${
+                    isActive
+                      ? 'text-primary border-l-4 border-primary pl-2'
+                      : 'text-gray-700 hover:text-primary'
+                  }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}

@@ -1,6 +1,7 @@
 'use client';
 
 import { Mail, Phone, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,17 +13,25 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* About Section */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md">
-                <span className="tracking-tighter">PMT</span>
-              </div>
+            <Link href="/" onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.history.pushState({}, '', '/');
+            }} className="flex items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity">
               <div>
-                <div className="font-bold text-white">PMT Infotech</div>
-                <div className="text-xs text-gray-500">IT SOLUTIONS</div>
+                <div className="flex items-center gap-0">
+                  <div className="relative">
+                    <span className="font-bold text-2xl text-blue-900">V</span>
+                    <span className="absolute top-0 left-0 font-bold text-lg text-blue-500" style={{marginLeft: '2px'}}>\</span>
+                  </div>
+                  <span className="font-bold text-2xl text-blue-900">yzen</span>
+                  <span className="font-bold text-2xl text-blue-500">Tech</span>
+                </div>
+                <div className="text-xs text-gray-500 font-medium">IT SOLUTIONS</div>
               </div>
-            </div>
+            </Link>
             <p className="text-gray-400 mb-6">
-              PMT Infotech is your trusted partner for innovative IT solutions, web development, and digital transformation services.
+              Vyzentech is your trusted partner for innovative IT solutions, web development, and digital transformation services.
             </p>
           </div>
 
@@ -94,8 +103,8 @@ export default function Footer() {
                 <Mail size={20} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <a href="mailto:pmtinfotech7@gmail.com" className="text-white hover:text-primary transition-colors">
-                    pmtinfotech7@gmail.com
+                  <a href="mailto:info@vyzentech.in" className="text-white hover:text-primary transition-colors">
+                    info@vyzentech.in
                   </a>
                 </div>
               </div>
@@ -103,8 +112,8 @@ export default function Footer() {
                 <Phone size={20} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-sm text-gray-400">Phone</p>
-                  <a href="tel:+919773148082" className="text-white hover:text-primary transition-colors">
-                    +91 9773148082
+                  <a href="tel:+917016124622" className="text-white hover:text-primary transition-colors">
+                    +91 7016124622
                   </a>
                 </div>
               </div>
@@ -112,7 +121,7 @@ export default function Footer() {
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-sm text-gray-400">Location</p>
-                  <p className="text-white">Vadodara, Gujarat</p>
+                  <p className="text-white">A-Wing 202-203, Union Heights, Rahulraj Mall Lane, Maharana Pratap Rd, Vesu, Surat, Gujarat 395007</p>
                 </div>
               </div>
             </div>
@@ -125,19 +134,24 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-gray-400 text-center md:text-left">
-            &copy; {currentYear} PMT Infotech. All rights reserved.
+            &copy; {currentYear} Vyzentech. All rights reserved.
           </p>
 
           <div className="flex gap-8">
-            <span className="text-gray-400">
+            <Link href="/" onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.history.pushState({}, '', '/');
+            }} className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
               Privacy Policy
-            </span>
-            <span className="text-gray-400">
+            </Link>
+            <Link href="/" onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              window.history.pushState({}, '', '/');
+            }} className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
               Terms of Service
-            </span>
-            <span className="text-gray-400">
-              Sitemap
-            </span>
+            </Link>
           </div>
         </div>
       </div>

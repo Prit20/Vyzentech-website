@@ -7,8 +7,8 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'PMT Infotech | Modern IT Solutions & Services',
-  description: 'PMT Infotech provides cutting-edge IT solutions, web development, and digital services for modern businesses.',
+  title: 'Vyzentech | Modern IT Solutions & Services',
+  description: 'Vyzentech provides cutting-edge IT solutions, web development, and digital services for modern businesses.',
 };
 
 export default function RootLayout({

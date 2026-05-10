@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-16">
           <p className="section-subtitle">WHY CHOOSE US</p>
           <h2 className="section-title">
-            Why <span className="text-gradient">PMT Infotech</span> Stands Out
+            Why <span className="text-gradient">Vyzentech</span> Stands Out
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4">
             We combine innovation, reliability, and expertise to deliver exceptional IT solutions that drive your business forward.

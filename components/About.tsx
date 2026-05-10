@@ -1,6 +1,6 @@
 'use client';
 
-import { Zap, Target, Eye, Award } from 'lucide-react';
+import { Zap, Award } from 'lucide-react';
 import Link from 'next/link';
 
 export default function About() {
@@ -11,13 +11,13 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Side - Content */}
           <div className="animate-slide-in-up">
-            <p className="section-subtitle">ABOUT PMT INFOTECH</p>
+            <p className="section-subtitle">ABOUT VYZENTECH</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Transforming Businesses Through <span className="text-gradient">Innovation</span>
             </h2>
 
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              PMT Infotech is a forward-thinking IT services company dedicated to delivering cutting-edge technology solutions. With years of expertise in web development, mobile applications, and digital transformation, we empower businesses to thrive in the digital age.
+              Vyzentech is a forward-thinking IT services company dedicated to delivering cutting-edge technology solutions. With years of expertise in web development, mobile applications, and digital transformation, we empower businesses to thrive in the digital age.
             </p>
 
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
@@ -219,40 +219,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Mission & Vision */}
-        <div className="border-t border-gray-200 pt-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Our <span className="text-gradient">Vision & Mission</span>
-            </h3>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Mission Card */}
-            <div className="relative p-8 rounded-xl bg-gradient-to-br from-blue-50 to-white border border-primary border-opacity-20 hover:shadow-lg transition-all duration-300 animate-slide-in-up">
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-lg">
-                <Target size={32} className="text-white" />
-              </div>
-              
-              <h4 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Our Mission</h4>
-              <p className="text-gray-600 leading-relaxed">
-                To provide exceptional IT solutions that empower businesses to achieve their digital goals, foster innovation, and drive sustainable growth through technology excellence and customer-centric service.
-              </p>
-            </div>
-
-            {/* Vision Card */}
-            <div className="relative p-8 rounded-xl bg-gradient-to-br from-secondary/10 to-white border border-secondary border-opacity-20 hover:shadow-lg transition-all duration-300 animate-slide-in-up" style={{animationDelay: '0.2s'}}>
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-secondary rounded-full flex items-center justify-center shadow-lg">
-                <Eye size={32} className="text-white" />
-              </div>
-              
-              <h4 className="text-2xl font-bold text-gray-900 mb-4 mt-4">Our Vision</h4>
-              <p className="text-gray-600 leading-relaxed">
-                To be the leading IT partner for businesses worldwide, recognized for innovation, reliability, and transformative solutions that shape the future of digital business and technology adoption.
-              </p>
-            </div>
-          </div>
-        </div>
+        {/* End of Main About Section */}
       </div>
     </section>
   );
