@@ -138,18 +138,16 @@ export default function Footer() {
           </p>
 
           <div className="flex gap-8">
-            <Link href="/" onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              window.history.pushState({}, '', '/');
-            }} className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+            <Link
+              href="/privacy"
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/" onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-              window.history.pushState({}, '', '/');
-            }} className="text-gray-400 hover:text-primary transition-colors cursor-pointer">
+            <Link
+              href="/terms"
+              className="text-gray-400 hover:text-primary transition-colors"
+            >
               Terms of Service
             </Link>
           </div>
