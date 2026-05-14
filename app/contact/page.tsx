@@ -125,16 +125,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Phone */}
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone size={24} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 7016124622</p>
-                  </div>
-                </div>
+
 
                 {/* Address */}
                 <div className="flex gap-4">

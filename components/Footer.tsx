@@ -1,6 +1,6 @@
 'use client';
 
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -108,15 +108,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="flex gap-3">
-                <Phone size={20} className="text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm text-gray-400">Phone</p>
-                  <a href="tel:+917016124622" className="text-white hover:text-primary transition-colors">
-                    +91 7016124622
-                  </a>
-                </div>
-              </div>
+
               <div className="flex gap-3">
                 <MapPin size={20} className="text-primary flex-shrink-0 mt-1" />
                 <div>

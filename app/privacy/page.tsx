@@ -125,7 +125,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
                 <p className="text-gray-600 leading-relaxed">
                   Vyzentech, A-Wing 202-203, Union Heights, Rahulraj Mall Lane, Maharana Pratap Rd,
-                  Vesu, Surat, Gujarat 395007. Phone: +91 7016124622.
+                  Vesu, Surat, Gujarat 395007.
                 </p>
               </div>
             </div>
